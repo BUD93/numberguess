@@ -55,6 +55,11 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+          <id>central</id>
+          <name>Central</name>
+          <url>http://repo1.maven.org/maven2</url>
+       </repository>
     </repositories>
 
     <pluginRepositories>
@@ -108,6 +113,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>applicationinsights-web</artifactId>
+                <!-- or applicationinsights-core for bare API -->
+                <version>[2.0,)</version>
+             </dependency>
         </dependencies>
     </dependencyManagement>
 
