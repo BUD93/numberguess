@@ -20,15 +20,16 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
-        }
+        }*/
         stage('Deliver') 
         { 
             steps 
             { 
                 echo 'hi'
                 powershell './deploy.ps1'
+                echo 'deployed'
             }
             
-        }*/
+        }
     }
 }
