@@ -6,7 +6,8 @@ pipeline {
         {
             steps 
             {
-                bat 'mvn -B -DskipTests clean package'
+                //bat 'mvn -B -DskipTests clean package'
+                bat 'mvn compile war:war'
             }
         }
         /*
@@ -19,7 +20,7 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
-        }*/
+        }
         stage('Deliver') 
         { 
             steps 
@@ -28,6 +29,6 @@ pipeline {
                 powershell './deploy.ps1'
             }
             
-        }
+        }*/
     }
 }
