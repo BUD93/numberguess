@@ -10,7 +10,7 @@ pipeline {
                 bat 'mvn compile war:war'
             }
         }
-        stage('Test') {
+        /*stage('Test') {
             steps {
                 bat 'mvn test'
             }
@@ -19,7 +19,7 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
-        }
+        }*/
         stage('Deliver') 
         { 
             steps 
