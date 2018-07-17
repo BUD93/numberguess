@@ -27,7 +27,7 @@ pipeline {
                 /*echo 'hi'
                 powershell './deploy.ps1'
                 echo 'deployed'*/
-                bat 'cd "C:\Program Files (x86)\Jenkins\workspace\numberguess\target"'
+                bat 'cd "C:/Program Files (x86)/Jenkins/workspace/numberguess/target"'
 
                 bat 'java -jar "C:\Program Files (x86)\Jenkins\jboss-cli-client.jar" -c --controller=remote+http://23.96.24.10:9990 --user=burhan --password=abcd@1234 --command="deploy jboss-numberguess.war"'
             }
