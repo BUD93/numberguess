@@ -27,6 +27,7 @@ import javax.faces.component.UIInput;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+import com.microsoft.applicationinsights.TelemetryClient;
 
 /**
  * <p>
